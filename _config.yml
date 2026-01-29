@@ -35,6 +35,9 @@ search_full_content: true
 # LOOK & FEEL
 # ─────────────────────────────────────────────────────────────────────────────
 minimal_mistakes_skin: "default" # options: air, aqua, contrast, dark, dirt, neon, mint, sunrise
+font_awesome:
+  version: "6.4.2"
+
 
 # ─────────────────────────────────────────────────────────────────────────────
 # TOP NAVIGATION (fallback; can also be driven from _data/navigation.yml)
@@ -63,7 +66,7 @@ collections:
     permalink: /data-management/:path/
   external-requests:
     output: true
-    permalink: /external-data-requests/:path/
+    permalink: /external-requests/:path/
   commitments:
     output: true
     permalink: /commitments/:path/
