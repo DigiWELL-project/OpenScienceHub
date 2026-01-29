@@ -1,37 +1,19 @@
 publication-workflow:
-  - title: "Overview"
+  - title: "Publication Workflow"
     url: /publication-workflow/
-  - title: "Before Submission"
-    url: /publication-workflow/before-submission/
-  - title: "After Acceptance"
-    url: /publication-workflow/after-acceptance/
 
 data-management:
-  - title: "Overview"
+  - title: "Data Management"
     url: /data-management/
-  - title: "Internal Storage"
-    url: /data-management/internal-storage/
-  - title: "Zenodo Sharing"
-    url: /data-management/zenodo-sharing/
 
 external-requests:
-  - title: "Overview"
+  - title: "External Data Requests"
     url: /external-data-requests/
-  - title: "Process"
-    url: /external-data-requests/process/
-  - title: "Legal & Ethical Summary"
-    url: /external-data-requests/legal-ethical/
 
 commitments:
   - title: "Open Science Commitments"
     url: /commitments/
-  - title: "Work Packages"
-    url: /commitments/work-packages/
 
 faq:
-  - title: "FAQ Overview"
+  - title: "FAQ"
     url: /faq/
-  - title: "Internal Repository"
-    url: /faq/internal-repository/
-  - title: "Zenodo Requirements"
-    url: /faq/zenodo/
