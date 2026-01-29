@@ -8,7 +8,7 @@ data-management:
 
 external-requests:
   - title: "External Data Requests"
-    url: /external-data-requests/
+    url: /external-requests/
 
 commitments:
   - title: "Open Science Commitments"
