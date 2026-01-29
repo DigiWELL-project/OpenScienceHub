@@ -3,33 +3,33 @@ layout: splash
 title: "DigiWELL Open Science Hub"
 permalink: /
 intro:
-  - excerpt: "A structured internal portal for DigiWELL researchers: publication workflow, data management, data sharing, commitments, and guidance for internal and external data access."
+  - excerpt: "A internal portal for DigiWELL researchers: publication workflow, data management, data sharing, commitments, and guidance for internal and external data access."
 feature_row:
-  - image_path: /assets/images/icons/publication.png
-    alt: "Publication Workflow"
+  - icon: "fa-solid fa-book"
     title: "Publication Workflow"
-    url: "/publication-workflow/"
+    url: "{{ '/publication-workflow/' | relative_url }}"
     excerpt: "Required steps before submission and after acceptance."
-  - image_path: /assets/images/icons/data.png
-    alt: "Data Management & Sharing"
+
+  - icon: "fa-solid fa-database"
     title: "Data Management & Sharing"
-    url: "/data-management/"
+    url: "{{ '/data-management/' | relative_url }}"
     excerpt: "Internal storage, documentation, anonymisation, and Zenodo sharing."
-  - image_path: /assets/images/icons/external.png
-    alt: "External Data Requests"
+
+  - icon: "fa-solid fa-share-nodes"
     title: "External Data Requests"
-    url: "/external-data-requests/"
+    url: "{{ '/external-data-requests/' | relative_url }}"
     excerpt: "Official process for handling external requests for DigiWELL datasets."
-  - image_path: /assets/images/icons/policy.png
-    alt: "Open Science Commitments"
+
+  - icon: "fa-solid fa-scale-balanced"
     title: "Open Science Commitments"
-    url: "/commitments/"
+    url: "{{ '/commitments/' | relative_url }}"
     excerpt: "Open Science principles implemented across DigiWELL work packages."
-  - image_path: /assets/images/icons/faq.png
-    alt: "FAQ"
+
+  - icon: "fa-solid fa-circle-question"
     title: "FAQ"
-    url: "/faq/"
+    url: "{{ '/faq/' | relative_url }}"
     excerpt: "Most common questions and answers regarding DigiWELL Open Science."
+
 ---
 
 {% include feature_row id="intro" type="center" %}
