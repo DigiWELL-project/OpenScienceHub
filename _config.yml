@@ -1,115 +1,165 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# ─────────────────────────────────────────────────────────────────────────────
+# SITE BASICS
+# ─────────────────────────────────────────────────────────────────────────────
+title: "DigiWELL Open Science Hub"
+subtitle: "Internal Portal"
+name: "DigiWELL Open Science Hub"
+description: "Open Science procedures for DigiWELL: publications, data management, data sharing, templates, and guidance for internal and external access."
+locale: en
+lang: en
+timezone: Europe/Prague
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: MM
-email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
-search: true
+# GitHub Pages URL settings
+# For project pages (this repo is a project page): set url to org/user domain and baseurl to /repository-name
+# For user/org pages (USERNAME.github.io), set baseurl: "" and url: "https://USERNAME.github.io"
+url: "https://digiwell-project.github.io"
+baseurl: "/OpenScienceHub"
 
-# Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# ─────────────────────────────────────────────────────────────────────────────
+# THEME (Minimal Mistakes as remote theme)
+# ─────────────────────────────────────────────────────────────────────────────
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 
-include:
-  - _pages
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
+# Required plugin for Minimal Mistakes
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
   - jekyll-include-cache
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
 
-author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# Search (client-side lunr.js)
+search: true
+search_full_content: true
 
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+# ─────────────────────────────────────────────────────────────────────────────
+# LOOK & FEEL
+# ─────────────────────────────────────────────────────────────────────────────
+minimal_mistakes_skin: "default" # options: air, aqua, contrast, dark, dirt, neon, mint, sunrise
 
+# ─────────────────────────────────────────────────────────────────────────────
+# TOP NAVIGATION (fallback; can also be driven from _data/navigation.yml)
+# ─────────────────────────────────────────────────────────────────────────────
+nav:
+  - title: "Publication Workflow"
+    url: /publication-workflow/
+  - title: "Data Management & Sharing"
+    url: /data-management/
+  - title: "External Data Requests"
+    url: /external-data-requests/
+  - title: "Open Science Commitments"
+    url: /commitments/
+  - title: "FAQ"
+    url: /faq/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# COLLECTIONS (sections of the hub)
+# ─────────────────────────────────────────────────────────────────────────────
+collections:
+  publication-workflow:
+    output: true
+    permalink: /publication-workflow/:path/
+  data-management:
+    output: true
+    permalink: /data-management/:path/
+  external-requests:
+    output: true
+    permalink: /external-data-requests/:path/
+  commitments:
+    output: true
+    permalink: /commitments/:path/
+  faq:
+    output: true
+    permalink: /faq/:title/
+
+# ─────────────────────────────────────────────────────────────────────────────
+# FRONT MATTER DEFAULTS
+# ─────────────────────────────────────────────────────────────────────────────
 defaults:
-  # _posts
+  # Pages (root and /_pages)
   - scope:
       path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-  # _pages
-  - scope:
-      path: "_pages"
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
+      toc: true
+      toc_sticky: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+  # Publication Workflow
+  - scope:
+      path: ""
+      type: publication-workflow
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: publication-workflow
+
+  # Data Management & Sharing
+  - scope:
+      path: ""
+      type: data-management
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: data-management
+
+  # External Data Requests
+  - scope:
+      path: ""
+      type: external-requests
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: external-requests
+
+  # Commitments
+  - scope:
+      path: ""
+      type: commitments
+    values:
+      layout: single
+      toc: true
+      toc_sticky: true
+      sidebar:
+        nav: commitments
+
+  # FAQ (each item is a single Q&A page)
+  - scope:
+      path: ""
+      type: faq
+    values:
+      layout: single
+      toc: false
+      sidebar:
+        nav: faq
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AUTHOR / SOCIAL (optional)
+# ─────────────────────────────────────────────────────────────────────────────
+author:
+  name: "DigiWELL Open Science"
+  avatar: "/assets/images/digiwell-avatar.png"
+  bio: "Guidance and support for Open Science in the DigiWELL project."
+  location: "CZ"
+
+github_username: DigiWELL-project
+
+# ─────────────────────────────────────────────────────────────────────────────
+# DIRECTORIES & EXCLUDES
+# ─────────────────────────────────────────────────────────────────────────────
+collections_dir: ""
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
