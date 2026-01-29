@@ -1,9 +1,37 @@
-main:
-  - title: "Posts"
-    url: /posts/
-  - title: "Categories"
-    url: /categories/
-  - title: "Tags"
-    url: /tags/
-  - title: "About"
-    url: /about/
+publication-workflow:
+  - title: "Overview"
+    url: /publication-workflow/
+  - title: "Before Submission"
+    url: /publication-workflow/before-submission/
+  - title: "After Acceptance"
+    url: /publication-workflow/after-acceptance/
+
+data-management:
+  - title: "Overview"
+    url: /data-management/
+  - title: "Internal Storage"
+    url: /data-management/internal-storage/
+  - title: "Zenodo Sharing"
+    url: /data-management/zenodo-sharing/
+
+external-requests:
+  - title: "Overview"
+    url: /external-data-requests/
+  - title: "Process"
+    url: /external-data-requests/process/
+  - title: "Legal & Ethical Summary"
+    url: /external-data-requests/legal-ethical/
+
+commitments:
+  - title: "Open Science Commitments"
+    url: /commitments/
+  - title: "Work Packages"
+    url: /commitments/work-packages/
+
+faq:
+  - title: "FAQ Overview"
+    url: /faq/
+  - title: "Internal Repository"
+    url: /faq/internal-repository/
+  - title: "Zenodo Requirements"
+    url: /faq/zenodo/
