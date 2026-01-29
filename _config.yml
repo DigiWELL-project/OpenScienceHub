@@ -35,8 +35,9 @@ search_full_content: true
 # LOOK & FEEL
 # ─────────────────────────────────────────────────────────────────────────────
 minimal_mistakes_skin: "default" # options: air, aqua, contrast, dark, dirt, neon, mint, sunrise
-font_awesome:
-  version: "6.4.2"
+custom_css:
+  - /assets/css/custom.css
+
 
 
 # ─────────────────────────────────────────────────────────────────────────────
