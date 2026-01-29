@@ -20,7 +20,7 @@ feature_row:
     title: "External Data Requests"
     url: "/external-data-requests/"
     excerpt: "Official process for handling external requests for DigiWELL datasets."
-  - image_path: /assets/images/icons/policy.png
+  - image_path: /assets/images/icons/commitments.png
     alt: "Open Science Commitments"
     title: "Open Science Commitments"
     url: "/commitments/"
