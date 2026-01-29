@@ -5,31 +5,31 @@ permalink: /
 intro:
   - excerpt: "A internal portal for DigiWELL researchers: publication workflow, data management, data sharing, commitments, and guidance for internal and external data access."
 feature_row:
-  - icon: "fa-solid fa-book"
+  - image_path: /assets/images/icons/publication.png
+    alt: "Publication Workflow"
     title: "Publication Workflow"
-    url: "{{ '/publication-workflow/' | relative_url }}"
+    url: "/publication-workflow/"
     excerpt: "Required steps before submission and after acceptance."
-
-  - icon: "fa-solid fa-database"
+  - image_path: /assets/images/icons/data.png
+    alt: "Data Management & Sharing"
     title: "Data Management & Sharing"
-    url: "{{ '/data-management/' | relative_url }}"
+    url: "/data-management/"
     excerpt: "Internal storage, documentation, anonymisation, and Zenodo sharing."
-
-  - icon: "fa-solid fa-share-nodes"
+  - image_path: /assets/images/icons/external.png
+    alt: "External Data Requests"
     title: "External Data Requests"
-    url: "{{ '/external-data-requests/' | relative_url }}"
+    url: "/external-data-requests/"
     excerpt: "Official process for handling external requests for DigiWELL datasets."
-
-  - icon: "fa-solid fa-scale-balanced"
+  - image_path: /assets/images/icons/policy.png
+    alt: "Open Science Commitments"
     title: "Open Science Commitments"
-    url: "{{ '/commitments/' | relative_url }}"
+    url: "/commitments/"
     excerpt: "Open Science principles implemented across DigiWELL work packages."
-
-  - icon: "fa-solid fa-circle-question"
+  - image_path: /assets/images/icons/faq.png
+    alt: "FAQ"
     title: "FAQ"
-    url: "{{ '/faq/' | relative_url }}"
+    url: "/faq/"
     excerpt: "Most common questions and answers regarding DigiWELL Open Science."
-
 ---
 
 {% include feature_row id="intro" type="center" %}
