@@ -1,9 +1,6 @@
 ---
 title: Frequently Asked Questions
 ---
-
-## Frequently Asked Questions
-
 This section answers the most common questions related to **data storage, sharing, and Open Science practices** within the DigiWELL project.
 
 ---
