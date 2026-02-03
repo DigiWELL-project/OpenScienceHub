@@ -2,8 +2,6 @@
 title: Open Science Commitments
 ---
 
-## Open Science Commitments
-
 The **DigiWELL project** fully implements the principles of **Open Science** in accordance with European Commission recommendations and OP JAK requirements.
 
 Our approach combines **mandatory Open Access obligations** with **advanced open research practices** that enhance transparency, reproducibility, and public engagement.
