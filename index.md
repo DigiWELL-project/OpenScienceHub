@@ -24,6 +24,10 @@ feature_row:
   - title: "FAQ"
     url: "/faq/"
     excerpt: "Most common questions and answers regarding DigiWELL Open Science."
+
+  - title: "News 2026"
+    url: "/news/2026-open-science-update/"
+    excerpt: "Update to Open Science rules following the MŠMT methodological letter (2026)."
 ---
 
 {% include feature_row id="intro" type="center" %}
