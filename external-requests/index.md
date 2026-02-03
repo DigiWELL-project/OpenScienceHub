@@ -2,8 +2,6 @@
 title: Handling External Data Requests
 ---
 
-## Handling External Data Requests
-
 This page describes the **mandatory procedure** for handling requests from **external researchers, institutions, or organisations** seeking access to DigiWELL data.
 
 All external data requests must follow the process below.  
