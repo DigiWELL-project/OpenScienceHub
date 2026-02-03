@@ -21,7 +21,7 @@ If you receive a data request directly (email, meeting, informal contact):
 ---
 
 ### Step 2: Initial Screening
-The **Data Steward** performs an initial screening to verify:
+The **Data Manager** performs an initial screening to verify:
 
 - completeness of the request
 - clarity of research purpose
