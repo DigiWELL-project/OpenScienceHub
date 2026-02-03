@@ -1,33 +1,31 @@
-/* ==================================================
-   DigiWELL – Base font size
-   ================================================== */
 
-/* Set absolute base font size */
-html {
-  font-size: 11px;
-}
-
-/* Main content */
-.page__content {
-  font-size: 1rem;
+body {
+  font-size: 11px !important;
   line-height: 1.5;
 }
 
-/* Page title */
-.page__title {
-  font-size: 1.6rem;
+.page__content,
+.page__content p,
+.page__content li,
+.page__content blockquote {
+  font-size: 11px !important;
+  line-height: 1.5;
 }
 
-/* Headings */
+/* Headings – scaled manually */
+.page__content h1 {
+  font-size: 20px;
+}
+
 .page__content h2 {
-  font-size: 1.35rem;
+  font-size: 16px;
 }
 
 .page__content h3 {
-  font-size: 1.2rem;
+  font-size: 14px;
 }
 
 /* TOC / sidebar */
 .toc {
-  font-size: 0.9rem;
+  font-size: 10px;
 }
