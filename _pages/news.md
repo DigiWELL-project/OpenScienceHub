@@ -2,8 +2,6 @@
 title: "News 2026: Update to Open Science Rules (MŠMT)"
 layout: single
 permalink: /news/2026-open-science-update/
-toc: true
-toc_sticky: true
 ---
 
 ## News 2026: Update to Open Science Rules (MŠMT)
