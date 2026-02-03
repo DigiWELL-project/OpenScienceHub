@@ -1,4 +1,3 @@
-# Publication Workflow
 
 This page summarises the required steps **before submitting a manuscript** and **after the publication is accepted**. The workflow follows **OP JAK requirements** and **DigiWELL Open Science policies**.
 
