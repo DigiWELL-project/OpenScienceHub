@@ -1,9 +1,6 @@
 ---
 title: Internal Data Storage
 ---
-
-## Internal Data Storage
-
 All research data **must first be stored in the internal repository** before any external sharing.
 
 ### Internal Repository
