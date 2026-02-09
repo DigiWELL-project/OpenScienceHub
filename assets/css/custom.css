@@ -1,4 +1,6 @@
-.layout--single .page__content,
-.layout--single .page__content p {
+.element-name {
   font-size: 8px !important;
+  line-height: 1 !important; 
+  padding: 0 !important;      
+  margin: 0 !important;       
 }
